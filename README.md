@@ -97,3 +97,4 @@ Install Valint as a tool
     valint report --scribe.client-id $SCRIBE_CLIENT_ID $SCRIBE_CLIENT_SECRET
 ``` 
 </details>
+
