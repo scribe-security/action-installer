@@ -1,5 +1,5 @@
 ---
-title: Bom
+title: Installer
 ---
 # Scribe GitHub actions - `installer`
 Scribe offers GitHub actions for embedding evidence collecting and validated integrity of your supply chain. \
