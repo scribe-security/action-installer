@@ -45,7 +45,7 @@ Note: Installing gensbom locally is very useful when you want to create an SBOM 
 ```YAML
 - name: Scribe tool install
   id: scribe_install
-  uses: scribe-security/actions/installer@master
+  uses: scribe-security/action-installer@master
 ```
 
 ## Installer action examples
@@ -56,7 +56,7 @@ Note: Installing gensbom locally is very useful when you want to create an SBOM 
 ```YAML
 - name: Gensbom install
   id: gensbom_install
-  uses: scribe-security/actions/installer@master
+  uses: scribe-security/action-installer@master
   with:
     tools: gensbom
 ``` 
@@ -64,7 +64,7 @@ Note: Installing gensbom locally is very useful when you want to create an SBOM 
 ```YAML
 - name: Gensbom install
   id: gensbom_install
-  uses: scribe-security/actions/installer@master
+  uses: scribe-security/action-installer@master
   with:
     tools: valint
 ``` 
