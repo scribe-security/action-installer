@@ -76,7 +76,7 @@ Note: Installing gensbom locally is very useful when you want to create an SBOM 
 Install gensbom as a tool
 ```YAML
 - name: install gensbom
-  uses: scribe-security/actions/gensbom/installer@master
+  uses: scribe-security/action-installer@master
 
 - name: gensbom run
   run: |
@@ -91,7 +91,7 @@ Install gensbom as a tool
 Install Valint as a tool
 ```YAML
 - name: install gensbom
-  uses: scribe-security/actions/gensbom/installer@master
+  uses: scribe-security/action-installer@master
   with:
     tool: valint
 
