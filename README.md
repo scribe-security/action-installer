@@ -2,11 +2,11 @@
 title: Installer
 ---
 # Scribe GitHub Actions - `installer`
-Scribe offers GitHub Actions for embedding evidence collecting and validated integrity of your supply chain.
+Scribe offers GitHub Actions for embedding evidence collecting and validated integrity of your supply chain. 
 
-Use `installer` to install Scribe tools on your workflow.
+Use `installer` to install Scribe tools in your workflow.
 
-Further documentation [Github integration](https://scribe-security.netlify.app/docs/ci-integrations/github/)
+For Further documentation [Github integration](https://scribe-security.netlify.app/docs/ci-integrations/github/)
 
 ## Other Actions
 * [bom - action](https://github.com/scribe-security/action-bom/README.md)
@@ -15,7 +15,7 @@ Further documentation [Github integration](https://scribe-security.netlify.app/d
 * [installer - action](https://github.com/scribe-security/action-installer/README.md)
 
 ## Tool installer Action
-You can use the `installer` Action to install any scribe tool in to your workflow allowing full access to all the CLI options in your workflows.
+You can use the `installer` Action to install any scribe tool in to your workflow allowing full access to all the CLI options in your workflows. 
 
 Install the tool locally if you want to:
 - Generate/verify evidence (SBOMS) from docker daemon.
@@ -101,4 +101,3 @@ Install Valint as a tool
     valint report --scribe.client-id $SCRIBE_CLIENT_ID $SCRIBE_CLIENT_SECRET
 ``` 
 </details>
-
