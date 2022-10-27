@@ -1,21 +1,21 @@
 ---
 title: Installer
 ---
-# Scribe GitHub actions - `installer`
-Scribe offers GitHub actions for embedding evidence collecting and validated integrity of your supply chain. \
+# Scribe GitHub Actions - `installer`
+Scribe offers GitHub Actions for embedding evidence collecting and validated integrity of your supply chain.
 
-`installer` is used to install Scribe tools on your workflow. \
+Use `installer` to install Scribe tools on your workflow.
 
 Further documentation [Github integration](https://scribe-security.netlify.app/docs/ci-integrations/github/)
 
-## Other actions
+## Other Actions
 * [bom - action](https://github.com/scribe-security/action-bom/README.md)
 * [verify - action](https://github.com/scribe-security/action-verify/README.md)
 * [integrity report - action](https://github.com/scribe-security/action-report/README.md)
 * [installer - action](https://github.com/scribe-security/action-installer/README.md)
 
-## Tool installer action
-You can use the `installer` action to install any scribe tool in to your workflow allowing full access to all the CLI options in your workflows. \
+## Tool installer Action
+You can use the `installer` Action to install any scribe tool in to your workflow allowing full access to all the CLI options in your workflows.
 
 Install the tool locally if you want to:
 - Generate/verify evidence (SBOMS) from docker daemon.
