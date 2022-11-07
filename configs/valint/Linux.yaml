@@ -1,4 +1,4 @@
-output-directory: ./scribe/gensbom
+output-directory: ./scribe/valint
 attest:
   default: sigstore-github
 context:
