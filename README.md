@@ -1,5 +1,5 @@
 ---
-title: Bom
+title: Installer
 ---
 # Scribe GitHub actions - `valint installer`
 Scribe offers GitHub actions for embedding evidence collecting and integrity verification to your workflows. \
