@@ -41,7 +41,7 @@ Note: Installing valint locally is very useful when you want to create an SBOM o
 ```YAML
 - name: Scribe tool install
   id: scribe_install
-  uses: scribe-security/actions/installer@dev
+  uses: scribe-security/actions/installer@master
 ```
 
 ## Installer action examples
@@ -52,7 +52,7 @@ Note: Installing valint locally is very useful when you want to create an SBOM o
 ```YAML
 - name: valint install
   id: valint_install
-  uses: scribe-security/actions/installer@dev
+  uses: scribe-security/actions/installer@master
   with:
     tools: gensbom
 ``` 
@@ -60,7 +60,7 @@ Note: Installing valint locally is very useful when you want to create an SBOM o
 ```YAML
 - name: valint install
   id: valint_install
-  uses: scribe-security/actions/installer@dev
+  uses: scribe-security/actions/installer@master
   with:
     tools: valint
 ``` 
@@ -72,7 +72,7 @@ Note: Installing valint locally is very useful when you want to create an SBOM o
 Install valint as a tool
 ```YAML
 - name: install valint
-  uses: scribe-security/actions/valint/installer@dev
+  uses: scribe-security/actions/valint/installer@master
 
 - name: valint run
   run: |
