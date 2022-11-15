@@ -5,7 +5,7 @@ inputs:
   tools:
     description: 'Select scribe tools <tool:version>'
     required: false
-    default: 'gensbom,valint'
+    default: 'valint'
 
 runs:
   using: "composite"
