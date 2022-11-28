@@ -50,7 +50,7 @@ Note: Installing valint locally is very useful when you want to create an SBOM o
   <summary> Select tool </summary>
 
 ```YAML
-- name: valint install
+- name: gensbom install
   id: valint_install
   uses: scribe-security/actions/installer@master
   with:
