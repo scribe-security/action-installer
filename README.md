@@ -1,5 +1,6 @@
 ---
 title: Installer
+sidebar_position: 2
 ---
 # Scribe GitHub Actions - `installer`
 Scribe offers GitHub Actions for embedding evidence collecting and validated integrity of your supply chain. 
@@ -22,7 +23,8 @@ Install the tool locally if you want to:
 - Generate/sign local directories (not mapped to the working dir)
 - Generate evidence for a global cache directory
 - Use tool functionality not exposed by containerized actions.
-Note: Installing gensbom locally is very useful when you want to create an SBOM outside the workflow default workspace directory.
+
+>Installing `gensbom` locally is useful when you want to create an evidence (mainly directories) on targets outside the workflow working dir.
 
 > action allows users to utilize `gensbom bom` in a non-containerized environment.
 
@@ -85,7 +87,7 @@ Install gensbom as a tool
 ``` 
 </details>
 
-<details>
+<!-- <details>
   <summary> Install Valint (tool) </summary>
 
 Install Valint as a tool
@@ -100,4 +102,4 @@ Install Valint as a tool
     valint --version
     valint report --scribe.client-id $SCRIBE_CLIENT_ID $SCRIBE_CLIENT_SECRET
 ``` 
-</details>
+</details> -->
