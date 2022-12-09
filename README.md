@@ -10,10 +10,10 @@ Use `installer` to install Scribe tools in your workflow.
 For Further documentation [Github integration](https://scribe-security.netlify.app/docs/ci-integrations/github/)
 
 ## Other Actions
-* [bom - action](https://github.com/scribe-security/action-bom/README.md)
-* [verify - action](https://github.com/scribe-security/action-verify/README.md)
-* [integrity report - action](https://github.com/scribe-security/action-report/README.md)
-* [installer - action](https://github.com/scribe-security/action-installer/README.md)
+* [bom](https://github.com/scribe-security/action-bom/README.md)
+* [verify](https://github.com/scribe-security/action-verify/README.md)
+* [installer](https://github.com/scribe-security/action-installer/README.md)
+<!-- * [integrity report - action](https://github.com/scribe-security/action-report/README.md) -->
 
 ## Tool installer Action
 You can use the `installer` Action to install any scribe tool in to your workflow allowing full access to all the CLI options in your workflows. 
@@ -24,9 +24,9 @@ Install the tool locally if you want to:
 - Generate evidence for a global cache directory
 - Use tool functionality not exposed by containerized actions.
 
->Installing `gensbom` locally is useful when you want to create an evidence (mainly directories) on targets outside the workflow working dir.
+> action allows users to utilize `gensbom` in a non-containerized environment.
 
-> action allows users to utilize `gensbom bom` in a non-containerized environment.
+>Installing `gensbom` locally is useful when you want to create an evidence (directory or git targets) on targets outside working directory.
 
 ### Input arguments
 ```yaml
