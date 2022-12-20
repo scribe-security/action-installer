@@ -1,4 +1,4 @@
-name: 'tool: installer'
+name: 'installer'
 description: 'Scribe tool installer'
 author: Mikey Strauss
 inputs:
