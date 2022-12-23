@@ -10,9 +10,9 @@ Use `installer` to install Scribe tools in your workflow.
 For Further documentation [Github integration](https://scribe-security.netlify.app/docs/ci-integrations/github/)
 
 ## Other Actions
-* [bom](https://github.com/scribe-security/action-bom/README.md)
-* [verify](https://github.com/scribe-security/action-verify/README.md)
-* [installer](https://github.com/scribe-security/action-installer/README.md)
+* [bom](action-bom.md), [source](https://github.com/scribe-security/action-bom)
+* [verify](action-verify.md), [source](https://github.com/scribe-security/action-verify)
+* [installer](action-installer.md), [source](https://github.com/scribe-security/action-installer)
 <!-- * [integrity report - action](https://github.com/scribe-security/action-report/README.md) -->
 
 ## Tool installer Action
@@ -24,21 +24,21 @@ Install the tool locally if you want to:
 - Generate evidence for a global cache directory
 - Use tool functionality not exposed by containerized actions.
 
-> action allows users to utilize `gensbom` in a non-containerized environment.
+> action allows users to utilize `valint` in a non-containerized environment.
 
->Installing `gensbom` locally is useful when you want to create an evidence (directory or git targets) on targets outside working directory.
+>Installing `valint` locally is useful when you want to create an evidence (directory or git targets) on targets outside working directory.
 
 ### Input arguments
 ```yaml
   tools:
     description: 'Select scribe tools <tool:version>'
     required: false
-    default: 'gensbom,valint'
+    default: 'valint,valint'
 ```
 
 ## Supported tools
 * valint
-* gensbom
+* valint
 
 ## OS - Arch support
 * Linux - arm64, amd64.
@@ -56,16 +56,16 @@ Install the tool locally if you want to:
   <summary> Select tool </summary>
 
 ```YAML
-- name: Gensbom install
-  id: gensbom_install
+- name: valint install
+  id: valint_install
   uses: scribe-security/action-installer@master
   with:
-    tools: gensbom
+    tools: valint
 ``` 
 
 ```YAML
-- name: Gensbom install
-  id: gensbom_install
+- name: valint install
+  id: valint_install
   uses: scribe-security/action-installer@master
   with:
     tools: valint
@@ -73,33 +73,34 @@ Install the tool locally if you want to:
 </details>
 
 <details>
+  <summary> Install valint (tool) </summary>
+
+Install valint as a tool
+```YAML
+- name: install valint
+  uses: scribe-security/action-installer@master
+
+- name: valint run
+  run: |
+    valint --version
+    valint bom busybox:latest -vv
+``` 
+</details>
+
+<!-- <details>
   <summary> Install gensbom (tool) </summary>
 
-Install gensbom as a tool
+Install Gensbom as a tool (backward compatible)
+
 ```YAML
 - name: install gensbom
   uses: scribe-security/action-installer@master
+  with:
+    tool: gensbom
 
 - name: gensbom run
   run: |
     gensbom --version
     gensbom bom busybox:latest -vv
-``` 
-</details>
-
-<!-- <details>
-  <summary> Install Valint (tool) </summary>
-
-Install Valint as a tool
-```YAML
-- name: install gensbom
-  uses: scribe-security/action-installer@master
-  with:
-    tool: valint
-
-- name: valint run
-  run: |
-    valint --version
-    valint report --scribe.client-id $SCRIBE_CLIENT_ID $SCRIBE_CLIENT_SECRET
 ``` 
 </details> -->
