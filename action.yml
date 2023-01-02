@@ -5,7 +5,7 @@ inputs:
   tools:
     description: 'Select scribe tools <tool:version>'
     required: false
-    default: 'valint'
+    default: 'gensbom,valint'
 
 runs:
   using: "composite"
@@ -35,7 +35,7 @@ runs:
           echo "Installing using install script" ${{ inputs.version }} ${{ inputs.tool }} 
           export SCRIBE_DEBUG=${DEBUG}
           export SCRIBE_INSTALL_DIR=/usr/local/bin
-          curl -sSfL https://raw.githubusercontent.com/scribe-security/misc/master/install.sh | sh -s -- -d -D
+          curl -sSfL https://raw.githubusercontent.com/scribe-security/misc/master/install.sh | sh
           if [ $? -eq 0 ] ; then
               echo "Installer success"
           else 
